@@ -19,6 +19,7 @@ window.onload = function() {
             if (q1 && q2 && q3 && q4) {
                 // Рассчитываем результат
                 const score = parseInt(q1.value) + parseInt(q2.value) + parseInt(q3.value) + parseInt(q4.value);
+                console.log("Score:", score); // Отладочное сообщение
 
                 let resultMessage = '';
                 let specialities = [];

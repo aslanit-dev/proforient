@@ -7,14 +7,14 @@ body {
 }
 
 header {
-    background-color: #333; /* Цвет фона шапки */
+    background-color: #025669; /* Цвет фона шапки */
     padding: 10px 0; /* Отступы сверху и снизу */
 }
 
 nav {
     display: flex; /* Включаем flexbox */
     justify-content: center; /* Центрируем ссылки по горизонтали */
-    background-color: #333; /* Задаем цвет фона навигационной панели */
+    background-color: #025669; /* Задаем цвет фона навигационной панели */
     padding: 20px 0; /* Отступы сверху и снизу */
 }
 

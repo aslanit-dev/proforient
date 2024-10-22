@@ -1,10 +1,10 @@
-document.addEventListener('DOMContentLoaded', function () {
+window.onload = function() {
     const careerTest = document.getElementById('career-test');
     const resultSection = document.getElementById('result');
     const resultText = document.getElementById('result-text');
     const specialitiesList = document.getElementById('specialities-list');
 
-    // Убедитесь, что форма найдена
+    // Проверяем, существует ли элемент формы
     if (careerTest) {
         careerTest.addEventListener('submit', function (event) {
             event.preventDefault();  // Останавливаем отправку формы
@@ -15,15 +15,15 @@ document.addEventListener('DOMContentLoaded', function () {
             const q3 = document.querySelector('input[name="q3"]:checked');
             const q4 = document.querySelector('input[name="q4"]:checked');
 
-            // Убедитесь, что все вопросы отвечены
+            // Проверка, что все вопросы отвечены
             if (q1 && q2 && q3 && q4) {
-                // Рассчитаем результат
+                // Рассчитываем результат
                 const score = parseInt(q1.value) + parseInt(q2.value) + parseInt(q3.value) + parseInt(q4.value);
 
                 let resultMessage = '';
                 let specialities = [];
 
-                // Выдаем результат на основе набранных баллов
+                // Определение результата
                 if (score >= 10) {
                     resultMessage = 'Вы склонны к программированию и разработке ПО.';
                     specialities = ['Программист', 'Разработчик мобильных приложений', 'Веб-разработчик'];
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     specialities = ['Гейм-дизайнер', 'Разработчик игр'];
                 }
 
-                // Отображаем результат
+                // Выводим результат
                 resultText.textContent = resultMessage;
                 specialitiesList.innerHTML = '';
                 specialities.forEach(function (speciality) {
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     specialitiesList.appendChild(li);
                 });
 
-                // Показываем раздел с результатом
+                // Показываем секцию с результатом
                 resultSection.classList.remove('hidden');
             } else {
                 alert('Пожалуйста, ответьте на все вопросы.');
@@ -56,4 +56,4 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
         console.error('Элемент формы "career-test" не найден.');
     }
-});
+};

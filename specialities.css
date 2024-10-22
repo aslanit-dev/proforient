@@ -23,7 +23,7 @@ h1, h2 {
     text-align: center; /* Центрирование текста внутри карточки */
     padding: 15px; /* Отступы внутри карточки */
     border-radius: 8px; /* Скругление углов */
-    background-color: #fff; /* Белый фон для карточек */
+    background-color: url('images/background-image.jpg')
     display: flex; /* Используем flexbox для размещения элементов */
     flex-direction: column; /* Располагаем элементы по колонке */
 }

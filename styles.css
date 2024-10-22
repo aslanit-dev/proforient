@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background: #282c34;
+    background: #a9ebfc;
     color: #fff;
     padding: 20px 0;
 }
@@ -30,7 +30,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #61dafb;
+    color: #3b3741;
     text-decoration: none;
     font-weight: 700;
     transition: color 0.3s;

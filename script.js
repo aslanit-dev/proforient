@@ -1,40 +1,44 @@
 const slides = document.querySelectorAll('.slide');
 let currentSlide = 0;
 const totalSlides = slides.length;
+const sliderTrack = document.querySelector('.slider-track');
 
-// Обработчик события для кнопки "Далее"
-document.getElementById('next').addEventListener('click', () => {
-    currentSlide = (currentSlide + 1) % totalSlides; // Увеличиваем индекс текущего слайда
-    updateSlider(); // Обновляем слайдер
-});
+// Обработчики для кнопок "Далее" и "Назад"
+document.getElementById('next').addEventListener('click', nextSlide);
+document.getElementById('prev').addEventListener('click', prevSlide);
 
-// Обработчик события для кнопки "Назад"
-document.getElementById('prev').addEventListener('click', () => {
-    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides; // Уменьшаем индекс текущего слайда
-    updateSlider(); // Обновляем слайдер
-});
-
-// Функция для обновления слайдера
-function updateSlider() {
-    const sliderTrack = document.querySelector('.slider-track');
-    sliderTrack.style.transform = `translateX(-${currentSlide * 100}%)`; // Сдвигаем слайдер
+// Функция для перехода к следующему слайду
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    updateSlider();
 }
 
-// Дополнительная функция для автоматической прокрутки слайдов
-let autoSlideInterval = setInterval(() => {
-    currentSlide = (currentSlide + 1) % totalSlides; // Увеличиваем индекс текущего слайда
-    updateSlider(); // Обновляем слайдер
-}, 3000); // Интервал в 3 секунды
+// Функция для перехода к предыдущему слайду
+function prevSlide() {
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    updateSlider();
+}
 
-// Остановка автоматической прокрутки при наведении
-document.querySelector('.slider').addEventListener('mouseenter', () => {
-    clearInterval(autoSlideInterval); // Останавливаем интервал
-});
+// Функция для обновления положения слайдера
+function updateSlider() {
+    sliderTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
+}
 
-// Возобновление автоматической прокрутки при выходе мыши
-document.querySelector('.slider').addEventListener('mouseleave', () => {
-    autoSlideInterval = setInterval(() => {
-        currentSlide = (currentSlide + 1) % totalSlides; // Увеличиваем индекс текущего слайда
-        updateSlider(); // Обновляем слайдер
-    }, 3000); // Интервал в 3 секунды
-});
+// Автоматическая прокрутка слайдов каждые 3 секунды
+let autoSlideInterval = setInterval(nextSlide, 3000);
+
+// Остановка автоматической прокрутки при наведении на слайдер
+document.querySelector('.slider').addEventListener('mouseenter', stopAutoSlide);
+
+// Возобновление автоматической прокрутки при уходе мыши со слайдера
+document.querySelector('.slider').addEventListener('mouseleave', startAutoSlide);
+
+// Функция остановки автоматической прокрутки
+function stopAutoSlide() {
+    clearInterval(autoSlideInterval);
+}
+
+// Функция возобновления автоматической прокрутки
+function startAutoSlide() {
+    autoSlideInterval = setInterval(nextSlide, 3000);
+}

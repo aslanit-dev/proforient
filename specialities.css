@@ -19,6 +19,8 @@
     width: 24px; /* Ширина иконки */
     height: 24px; /* Высота автоматически подстраивается */
     object-fit: contain;
+    max-width: 24px;
+    max-height: 24px;
 }
 
 /* Фоновое изображение */

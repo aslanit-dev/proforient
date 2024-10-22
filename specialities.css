@@ -1,0 +1,45 @@
+/* Новый стиль для карточек специальностей */
+.specialty {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.specialty:hover {
+    transform: translateY(-5px);
+}
+
+/* Иконки для специальностей */
+.specialty h2 {
+    display: flex;
+    align-items: center;
+}
+
+.specialty h2 img {
+    margin-right: 10px; /* Отступ между иконкой и заголовком */
+    width: 30px; /* Ширина иконки */
+    height: auto; /* Высота автоматически подстраивается */
+}
+
+/* Фоновое изображение */
+#specialties {
+    background: url('path/to/your/background-image.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Кнопки действий */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #DCB489; /* Золотой цвет */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #C89A73; /* Темнее при наведении */
+}

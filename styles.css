@@ -8,12 +8,12 @@
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    color: #464046; /* Ливерный цвет */
-    background-color: #DABFAA; /* Бледно-песочный */
+    color: #333;
+    background-color: #FBE7C3; /* Кремовый цвет фона страницы */
 }
 
 header {
-    background: #689B80; /* Светлый синевато-зеленый */
+    background: #678A90; /* Светлый зеленовато-синий */
     color: #fff;
     padding: 20px 0;
 }
@@ -26,18 +26,18 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 25px;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #CAB057; /* Серый желтый */
+    color: #CEE5DD; /* Пастельный бирюзовый */
     text-decoration: none;
     font-weight: 700;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #97B3C2; /* Сизый цвет */
+    color: #DCB489; /* Золотой цвет при наведении */
 }
 
 .hero {
@@ -116,28 +116,27 @@ nav ul li a:hover {
 #about-us, #latest-news {
     margin: 40px 0;
     padding: 20px;
-    background: #E2D6CE; /* Очень бледный розовый */
+    background: #86A394; /* Темное зеленое море */
     border-radius: 8px;
 }
 
 h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #689B80; /* Светлый синевато-зеленый */
 }
 
 article {
     margin: 15px 0;
     padding: 15px;
-    background: #fff; /* Белый фон для статей */
-    border: 1px solid #CAB057; /* Серый желтый */
+    background: #fff;
+    border: 1px solid #ddd;
     border-radius: 5px;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background: #689B80; /* Светлый синевато-зеленый */
+    background: #678A90; /* Светлый зеленовато-синий */
     color: #fff;
 }
 

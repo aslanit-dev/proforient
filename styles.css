@@ -9,11 +9,11 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #FBE7C3; /* Кремовый цвет фона страницы */
+    background-color: #F9FFFF; /* Небесная лазурь */
 }
 
 header {
-    background: #678A90; /* Светлый зеленовато-синий */
+    background: #2F6FB6; /* Темный зеленый чай */
     color: #fff;
     padding: 20px 0;
 }
@@ -30,7 +30,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #A4DBB1; /* Нежный пастельный мятный */
+    color: #AABFD0; /* Серовато-голубой */
     text-decoration: none;
     font-weight: 700;
     transition: color 0.3s;
@@ -46,7 +46,7 @@ h1 {
 }
 
 .widget {
-    background: #28798B; /* Водная синь */
+    background: #6C8DAE; /* Сизый цвет */
     padding: 30px;
     border-radius: 10px;
     max-width: 800px; /* Максимальная ширина виджета */
@@ -63,7 +63,7 @@ h2 {
 .question {
     margin: 15px 0;
     padding: 15px;
-    background: #A4DBB1; /* Нежный пастельный мятный */
+    background: #BCCF97; /* Светлый джинсовый цвет */
     border-radius: 5px;
 }
 
@@ -73,7 +73,7 @@ h2 {
 }
 
 .submit-btn {
-    background: #B086A8; /* Оперный розовато-лиловый */
+    background: #A4DBB1; /* Нежный пастельный мятный */
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -84,7 +84,7 @@ h2 {
 }
 
 .submit-btn:hover {
-    background: #935669; /* Темно-серая мальва */
+    background: #935669; /* Темно-серая мальва (по желанию можно заменить на другой цвет) */
 }
 
 #result {
@@ -98,7 +98,7 @@ h2 {
 footer {
     text-align: center;
     padding: 20px;
-    background: #678A90; /* Светлый зеленовато-синий */
+    background: #2F6FB6; /* Темный зеленый чай */
     color: #fff;
 }
 

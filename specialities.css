@@ -47,7 +47,7 @@ h1, h2 {
 /* Кнопки действий */
 .btn {
     display: inline-block;
-    margin-top: auto; /* Сдвигаем кнопки вниз */
+    margin-top: auto; /* Автоматический отступ сверху */
     padding: 10px 15px;
     background-color: #DCB489; /* Золотой цвет */
     color: #fff;
@@ -55,6 +55,7 @@ h1, h2 {
     border-radius: 5px;
     transition: background-color 0.3s;
 }
+
 
 .btn:hover {
     background-color: #C89A73; /* Темнее при наведении */

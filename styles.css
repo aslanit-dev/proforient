@@ -14,7 +14,7 @@ header {
 nav {
     display: flex; /* Включаем flexbox */
     justify-content: center; /* Центрируем ссылки по горизонтали */
-    background-color: #025669; /* Задаем цвет фона навигационной панели */
+    background-color: #84c3be; /* Задаем цвет фона навигационной панели */
     padding: 20px 0; /* Отступы сверху и снизу */
 }
 

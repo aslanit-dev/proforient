@@ -16,11 +16,11 @@
 
 .specialty h2 img {
     margin-right: 10px; /* Отступ между иконкой и заголовком */
-    width: 50px; /* Ширина иконки */
-    height: 50px; /* Высота автоматически подстраивается */
+    width: 30px; /* Ширина иконки */
+    height: 30px; /* Высота автоматически подстраивается */
     object-fit: contain;
-    max-width: 50px;
-    max-height: 50px;
+    max-width: 30px;
+    max-height: 30px;
 }
 
 /* Фоновое изображение */

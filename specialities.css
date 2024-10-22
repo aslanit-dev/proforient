@@ -1,7 +1,29 @@
-/* Новый стиль для карточек специальностей */
+/* Центрирование текста в заголовках */
+h1, h2 {
+    text-align: center;
+}
+
+/* Центрирование карточек специальностей */
+#specialties {
+    display: flex;
+    flex-wrap: wrap; /* Позволяет карточкам переходить на следующую строку */
+    justify-content: center; /* Центрирует карточки по горизонтали */
+    gap: 20px; /* Отступы между карточками */
+    background: url('path/to/your/background-image.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Общий стиль для карточек специальностей */
 .specialty {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+    width: 300px; /* Фиксированная ширина карточки для лучшего выравнивания */
+    text-align: center; /* Центрирование текста внутри карточки */
+    padding: 15px; /* Отступы внутри карточки */
+    border-radius: 8px; /* Скругление углов */
+    background-color: #fff; /* Белый фон для карточек */
 }
 
 .specialty:hover {
@@ -12,6 +34,7 @@
 .specialty h2 {
     display: flex;
     align-items: center;
+    justify-content: center; /* Центрирует иконки и текст */
 }
 
 .specialty h2 img {
@@ -21,14 +44,6 @@
     object-fit: contain;
     max-width: 30px;
     max-height: 30px;
-}
-
-/* Фоновое изображение */
-#specialties {
-    background: url('path/to/your/background-image.jpg') no-repeat center center;
-    background-size: cover;
-    padding: 20px;
-    border-radius: 8px;
 }
 
 /* Кнопки действий */

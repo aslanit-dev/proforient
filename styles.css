@@ -9,6 +9,7 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: #333;
+    background-color: #f4f4f4; /* Цвет фона страницы */
 }
 
 header {
@@ -55,17 +56,21 @@ nav ul li a:hover {
 }
 
 .content {
-    margin: 40px 0;
+    margin: 20px 0;
 }
 
 .slider {
     position: relative;
     overflow: hidden;
+    width: 100%;
+    max-width: 800px; /* Максимальная ширина слайдера */
+    margin: 0 auto; /* Центрирование слайдера */
+    border-radius: 10px; /* Скругление углов */
 }
 
 .slider-track {
     display: flex;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
 }
 
 .slide {
@@ -75,6 +80,7 @@ nav ul li a:hover {
 
 .slide img {
     width: 100%;
+    height: auto;
     display: block;
 }
 
@@ -136,4 +142,31 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+/* Адаптивные стили для мобильных устройств */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem; /* Уменьшаем размер заголовка */
+    }
+
+    nav ul {
+        flex-direction: column; /* Меняем направление навигации на вертикальное */
+    }
+
+    .slider {
+        width: 100%; /* Ширина слайдера на мобильных устройствах */
+    }
+
+    .slide-text {
+        font-size: 1rem; /* Уменьшаем размер текста на слайде */
+    }
+
+    #about-us, #latest-news {
+        padding: 15px; /* Уменьшаем отступы для мобильных устройств */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Уменьшаем размер заголовка секций */
+    }
 }

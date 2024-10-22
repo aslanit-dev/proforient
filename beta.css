@@ -1,0 +1,21 @@
+/* Новый стиль для кнопок */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background: #2F6FB6; /* Цвет кнопки */
+    color: #F9FFFF; /* Цвет текста кнопки */
+    border-radius: 5px; /* Скругление углов */
+    text-decoration: none; /* Убираем подчеркивание */
+    transition: background 0.3s; /* Эффект при наведении */
+}
+
+.btn:hover {
+    background: #DCB489; /* Цвет при наведении */
+}
+
+/* Иконки */
+.icon {
+    margin-right: 8px; /* Отступ между иконкой и текстом */
+    font-size: 1.2rem; /* Размер иконки */
+}

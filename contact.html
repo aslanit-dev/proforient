@@ -27,10 +27,10 @@
     <main>
         <section id="contact-info">
             <h2>Свяжитесь с нами</h2>
-            <p>Если у вас есть вопросы или предложения, пожалуйста, свяжитесь с нами:</p>
+            <p>Если у вас есть вопросы или предложения, пожалуйста, выберите удобный способ связи:</p>
             <ul>
-                <li><strong>Электронная почта:</strong> info@it-career.com</li>
-                <li><strong>Телефон:</strong> +7 (123) 456-78-90</li>
+                <li><strong>Электронная почта:</strong> <a href="mailto:info@it-career.com">info@it-career.com</a></li>
+                <li><strong>Телефон:</strong> <a href="tel:+71234567890">+7 (123) 456-78-90</a></li>
                 <li><strong>Адрес:</strong> г. Москва, ул. Программная, д. 1</li>
             </ul>
         </section>
@@ -43,6 +43,15 @@
 
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
+
+                <label for="reason">Причина обращения:</label>
+                <select id="reason" name="reason" required>
+                    <option value="">Выберите</option>
+                    <option value="question">Вопрос</option>
+                    <option value="feedback">Обратная связь</option>
+                    <option value="suggestion">Предложение</option>
+                    <option value="other">Другое</option>
+                </select>
 
                 <label for="message">Сообщение:</label>
                 <textarea id="message" name="message" rows="4" required></textarea>

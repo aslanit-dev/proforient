@@ -24,19 +24,20 @@ h1, h2 {
     padding: 15px; /* Отступы внутри карточки */
     border-radius: 8px; /* Скругление углов */
     background-color: #fff; /* Белый фон для карточек */
+    display: flex; /* Используем flexbox для размещения элементов */
+    flex-direction: column; /* Располагаем элементы по колонке */
 }
 
-.specialty:hover {
-    transform: translateY(-5px);
-}
-
-/* Иконки для специальностей */
+/* Уменьшаем размер шрифта заголовков */
 .specialty h2 {
+    font-size: 18px; /* Размер шрифта заголовка */
+    margin: 0; /* Убираем отступы */
     display: flex;
     align-items: center;
     justify-content: center; /* Центрирует иконки и текст */
 }
 
+/* Иконки для специальностей */
 .specialty h2 img {
     margin-right: 10px; /* Отступ между иконкой и заголовком */
     width: 50px; /* Увеличенная ширина иконки */
@@ -47,7 +48,7 @@ h1, h2 {
 /* Кнопки действий */
 .btn {
     display: inline-block;
-    margin-top: 20px; /* Увеличенный отступ сверху для лучшего выравнивания */
+    margin-top: auto; /* Сдвигаем кнопки вниз */
     padding: 10px 15px;
     background-color: #DCB489; /* Золотой цвет */
     color: #fff;
@@ -58,4 +59,8 @@ h1, h2 {
 
 .btn:hover {
     background-color: #C89A73; /* Темнее при наведении */
+}
+
+.specialty:hover {
+    transform: translateY(-5px);
 }

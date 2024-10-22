@@ -9,12 +9,12 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #F9FFFF; /* Кремовый цвет фона страницы */
+    background-color: #F9FFFF; /* Цвет фона страницы */
 }
 
 header {
     background: #6C8DAE; /* Светлый зеленовато-синий */
-    color: #fff;
+    color: #F9FFFF; /* Цвет текста в заголовке */
     padding: 20px 0;
 }
 
@@ -30,7 +30,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #F9FFFF; /* Пастельный бирюзовый */
+    color: #F9FFFF; /* Цвет текста навигации */
     text-decoration: none;
     font-weight: 700;
     transition: color 0.3s;
@@ -88,7 +88,7 @@ nav ul li a:hover {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    color: #fff;
+    color: #F9FFFF; /* Цвет текста на слайде */
     background: rgba(0, 0, 0, 0.5);
     padding: 10px;
     font-size: 1.2rem;
@@ -116,20 +116,21 @@ nav ul li a:hover {
 #about-us, #latest-news {
     margin: 40px 0;
     padding: 20px;
-    background: #AABFD0; /* Темное зеленое море */
+    background: #AABFD0; /* Цвет фона разделов */
     border-radius: 8px;
 }
 
 h2 {
     font-size: 2rem;
     margin-bottom: 20px;
+    color: #2F6FB6; /* Цвет заголовка секций */
 }
 
 article {
     margin: 15px 0;
     padding: 15px;
-    background: #BCCF97;
-    border: 1px solid #AABFD0;
+    background: #F9FFFF; /* Цвет фона статьи */
+    border: 1px solid #AABFD0; /* Цвет рамки статьи */
     border-radius: 5px;
 }
 
@@ -137,7 +138,7 @@ footer {
     text-align: center;
     padding: 20px;
     background: #6C8DAE; /* Светлый зеленовато-синий */
-    color: #fff;
+    color: #F9FFFF; /* Цвет текста в подвале */
 }
 
 footer p {

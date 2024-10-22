@@ -24,7 +24,7 @@ document.getElementById('career-test').addEventListener('submit', function(event
     // Отображаем результат
     const resultText = document.getElementById('result-text');
     const specialitiesList = document.getElementById('specialities-list');
-    specialitiesList.innerHTML = '';
+    specialitiesList.innerHTML = ''; // Очистить предыдущие результаты
 
     if (score >= 10) {
         resultText.textContent = 'Вы подходите для разработки программного обеспечения.';

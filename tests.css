@@ -1,0 +1,73 @@
+/* Стили для виджета профориентации */
+#career-test {
+    background-color: #F9FFFF; /* Цвет фона */
+    border-radius: 10px; /* Скругление углов */
+    padding: 20px; /* Отступы внутри формы */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Тень */
+    max-width: 600px; /* Максимальная ширина */
+    margin: 30px auto; /* Центрирование формы */
+}
+
+h2 {
+    color: #2F6FB6; /* Цвет заголовка */
+    margin-bottom: 15px; /* Отступ снизу */
+    text-align: center; /* Выравнивание по центру */
+}
+
+.question {
+    margin-bottom: 20px; /* Отступ между вопросами */
+    padding: 10px; /* Отступы внутри вопроса */
+    background-color: #AABFD0; /* Цвет фона вопросов */
+    border-radius: 8px; /* Скругление углов */
+}
+
+.question p {
+    margin-bottom: 10px; /* Отступ между текстом вопроса и ответами */
+    font-weight: bold; /* Жирный текст для вопросов */
+}
+
+label {
+    display: block; /* Каждый ответ на новой строке */
+    margin: 5px 0; /* Отступы между ответами */
+}
+
+button[type="submit"] {
+    background-color: #DCB489; /* Золотой цвет для кнопки */
+    color: #fff; /* Цвет текста */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    border: none; /* Без рамки */
+    border-radius: 5px; /* Скругление углов кнопки */
+    cursor: pointer; /* Указатель при наведении */
+    font-size: 1.1rem; /* Размер текста кнопки */
+    transition: background-color 0.3s; /* Плавный переход цвета */
+    margin-top: 20px; /* Отступ сверху */
+}
+
+button[type="submit"]:hover {
+    background-color: #C89A73; /* Темный цвет при наведении */
+}
+
+/* Стили для результатов */
+#result {
+    background-color: #AABFD0; /* Цвет фона для результатов */
+    padding: 20px; /* Отступы внутри блока результатов */
+    border-radius: 10px; /* Скругление углов */
+    max-width: 600px; /* Максимальная ширина */
+    margin: 30px auto; /* Центрирование блока */
+}
+
+#specialities-list {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding-left: 0; /* Убираем отступ */
+}
+
+footer {
+    text-align: center; /* Центрирование текста */
+    padding: 20px; /* Отступы внутри футера */
+    background: #6C8DAE; /* Светлый зеленовато-синий */
+    color: #fff; /* Цвет текста */
+}
+
+footer p {
+    margin: 0; /* Убираем отступы */
+}

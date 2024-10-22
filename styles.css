@@ -21,6 +21,7 @@ a {
 a:hover {
   text-decoration: underline;
 }
+}
     margin: 0; /* Убираем отступы по умолчанию */
     padding: 0; /* Убираем отступы по умолчанию */
 }

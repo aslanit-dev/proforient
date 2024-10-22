@@ -9,7 +9,7 @@ h1, h2 {
     flex-wrap: wrap; /* Позволяет карточкам переходить на следующую строку */
     justify-content: center; /* Центрирует карточки по горизонтали */
     gap: 20px; /* Отступы между карточками */
-    background: url('path/to/your/background-image.jpg') no-repeat center center;
+    background: url('images/background-image.jpg') no-repeat center center; /* Замените путь на правильный */
     background-size: cover;
     padding: 20px;
     border-radius: 8px;
@@ -39,17 +39,15 @@ h1, h2 {
 
 .specialty h2 img {
     margin-right: 10px; /* Отступ между иконкой и заголовком */
-    width: 30px; /* Ширина иконки */
-    height: 30px; /* Высота автоматически подстраивается */
+    width: 50px; /* Увеличенная ширина иконки */
+    height: 50px; /* Увеличенная высота иконки */
     object-fit: contain;
-    max-width: 30px;
-    max-height: 30px;
 }
 
 /* Кнопки действий */
 .btn {
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 20px; /* Увеличенный отступ сверху для лучшего выравнивания */
     padding: 10px 15px;
     background-color: #DCB489; /* Золотой цвет */
     color: #fff;

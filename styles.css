@@ -153,6 +153,8 @@ footer p {
 
     nav ul {
         flex-direction: column; /* Меняем направление навигации на вертикальное */
+        justify-content: center; /* Центрируем навигацию */
+        align-items: center; /* Выравниваем по центру */
     }
 
     .slider {

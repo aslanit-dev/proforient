@@ -103,3 +103,142 @@ footer {
     text-align: center; /* Центрируем текст в подвале */
     padding: 10px 0; /* Отступы сверху и снизу */
 }
+body {
+    background-color: #B0C4DE; /* Цвет фона страницы */
+    color: white; /* Цвет текста */
+    font-family: 'Roboto', sans-serif; /* Шрифт текста */
+    margin: 0; /* Убираем отступы по умолчанию */
+    padding: 0; /* Убираем отступы по умолчанию */
+}
+
+header {
+    background-color: #ccc; /* Цвет фона шапки */
+    padding: 10px 0; /* Отступы сверху и снизу */
+}
+
+nav {
+    display: flex; /* Включаем flexbox */
+    justify-content: center; /* Центрируем ссылки по горизонтали */
+    background-color: #84c3be; /* Задаем цвет фона навигационной панели */
+    padding: 20px 0; /* Отступы сверху и снизу */
+}
+
+nav ul {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+    display: flex; /* Выравнивание по горизонтали */
+}
+
+nav ul li {
+    margin: 0 15px; /* Отступы между элементами списка */
+}
+
+nav a {
+    color: white; /* Цвет ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+    font-weight: bold; /* Жирный текст */
+    transition: color 0.3s; /* Плавный переход цвета */
+    font-size: 25px; /* Размер шрифта ссылок */
+}
+
+nav a:hover {
+    color: #FFD700; /* Цвет при наведении */
+}
+
+.hero {
+    text-align: center; /* Центрируем заголовок */
+    padding: 20px 0; /* Отступы сверху и снизу */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Распределяем элементы по всему доступному пространству */
+    align-items: flex-start; /* Выравнивание по верхнему краю */
+    padding: 20px; /* Добавьте немного отступов */
+}
+
+.content {
+    display: flex; /* Убедитесь, что элементы располагаются в ряд */
+    flex: 1; /* Позволяет контенту занимать оставшееся пространство */
+    flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
+}
+
+.slider {
+    flex: 1; /* Занимает 1/3 ширины */
+    position: relative; /* Для абсолютного позиционирования текста внутри слайдов */
+    min-width: 300px; /* Минимальная ширина для мобильных устройств */
+}
+
+.slider-track {
+    display: flex; /* Горизонтальное расположение слайдов */
+    transition: transform 0.5s ease; /* Плавный переход при переключении слайдов */
+}
+
+.slide {
+    min-width: 100%; /* Ширина каждого слайда на 100% от контейнера */
+    position: relative; /* Для абсолютного позиционирования текста внутри слайда */
+}
+
+.slide-text {
+    position: absolute;
+    bottom: 10%; /* Расположение текста от нижней части слайда */
+    left: 50%; /* Центрирование текста по горизонтали */
+    transform: translateX(-50%); /* Центрирование текста */
+    font-size: 50px; /* Размер текста на слайдах */
+    color: #FFFFFF; /* Цвет текста */
+    background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный фон */
+    padding: 10px 20px; /* Отступы вокруг текста */
+    border-radius: 5px; /* Скругление углов */
+    text-align: center; /* Центрирование текста */
+}
+
+.arrow {
+    background: transparent; /* Прозрачный фон кнопок */
+    border: none; /* Убираем рамку кнопок */
+    font-size: 2rem; /* Размер кнопок */
+    cursor: pointer; /* Указываем, что кнопка кликабельна */
+}
+
+#about-us, #latest-news {
+    margin-top: 20px; /* Отступ сверху для секций */
+    padding: 20px; /* Отступы внутри секций */
+    background-color: #444; /* Цвет фона для секций */
+    border-radius: 5px; /* Скругление углов */
+}
+
+footer {
+    text-align: center; /* Центрируем текст в подвале */
+    padding: 10px 0; /* Отступы сверху и снизу */
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Вертикальное расположение навигации */
+    }
+
+    nav ul {
+        flex-direction: column; /* Вертикальное расположение списка */
+        align-items: center; /* Центрирование элементов списка */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Отступы между элементами списка */
+    }
+
+    .container {
+        flex-direction: column; /* Вертикальное расположение контейнера */
+    }
+
+    .content {
+        flex-direction: column; /* Вертикальное расположение контента */
+    }
+
+    .slider {
+        min-width: 100%; /* Ширина слайда на полную ширину */
+    }
+
+    .slide-text {
+        font-size: 30px; /* Размер текста на слайдах для мобильных */
+    }
+}

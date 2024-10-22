@@ -13,8 +13,8 @@ body {
 }
 
 header {
-    background: #678A90; /* Светлый зеленовато-синий */
-    color: #fff;
+    background: #45666B; /* Цвет маренго */
+    color: #D6C6AD; /* Бледно-песочный цвет текста */
     padding: 20px 0;
 }
 
@@ -30,14 +30,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #CEE5DD; /* Пастельный бирюзовый */
+    color: #D6C6AD; /* Бледно-песочный цвет */
     text-decoration: none;
     font-weight: 700;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #DCB489; /* Золотой цвет при наведении */
+    color: #D20222; /* Яркий красный при наведении */
 }
 
 .hero {
@@ -47,6 +47,7 @@ nav ul li a:hover {
 
 .hero h1 {
     font-size: 2.5rem;
+    color: #4F282D; /* Коричневый махагон */
 }
 
 .container {
@@ -116,13 +117,14 @@ nav ul li a:hover {
 #about-us, #latest-news {
     margin: 40px 0;
     padding: 20px;
-    background: #86A394; /* Темное зеленое море */
+    background: #D6C6AD; /* Бледно-песочный цвет */
     border-radius: 8px;
 }
 
 h2 {
     font-size: 2rem;
     margin-bottom: 20px;
+    color: #4F282D; /* Коричневый махагон */
 }
 
 article {
@@ -136,8 +138,8 @@ article {
 footer {
     text-align: center;
     padding: 20px;
-    background: #678A90; /* Светлый зеленовато-синий */
-    color: #fff;
+    background: #454A4E; /* Цвет синий серый */
+    color: #D6C6AD; /* Бледно-песочный цвет текста */
 }
 
 footer p {

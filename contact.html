@@ -3,65 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Контакты</title>
+    <title>Форма обратной связи</title>
     <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="contact.css">
+    </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="specialities.html">Специальности</a></li>
-                <li><a href="tests.html">Тесты</a></li>
-                <li><a href="resources.html">Ресурсы</a></li>
-                <li><a href="career.html">Карьера</a></li>
-                <li><a href="community.html">Сообщество</a></li>
-                <li><a href="success-stories.html">Истории успеха</a></li>
-                <li><a href="blog.html">Блог</a></li>
-                <li><a href="contact.html">Контакты</a></li>
-                <li><a href="beta.html">Бета</a></li>
-            </ul>
-        </nav>
-        <h1>Контакты</h1>
-    </header>
     <main>
-        <section id="contact-info">
-            <h2>Свяжитесь с нами</h2>
-            <p>Если у вас есть вопросы или предложения, пожалуйста, выберите удобный способ связи:</p>
-            <ul>
-                <li><strong>Электронная почта:</strong> <a href="mailto:info@it-career.com">info@it-career.com</a></li>
-                <li><strong>Телефон:</strong> <a href="tel:+71234567890">+7 (123) 456-78-90</a></li>
-                <li><strong>Адрес:</strong> г. Москва, ул. Программная, д. 1</li>
-            </ul>
-        </section>
-        
-        <section id="contact-form">
-            <h2>Форма обратной связи</h2>
-            <form action="#" method="post">
-                <label for="name">Имя:</label>
-                <input type="text" id="name" name="name" required>
+        <h1>Форма обратной связи</h1>
+        <form action="#" method="post" id="contactForm">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-                <label for="reason">Причина обращения:</label>
-                <select id="reason" name="reason" required>
-                    <option value="">Выберите</option>
-                    <option value="question">Вопрос</option>
-                    <option value="feedback">Обратная связь</option>
-                    <option value="suggestion">Предложение</option>
-                    <option value="other">Другое</option>
-                </select>
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
 
-                <label for="message">Сообщение:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-
-                <button type="submit">Отправить</button>
-            </form>
-        </section>
+            <button type="submit">Отправить</button>
+            <div class="message" id="successMessage" style="display: none;">Ваше сообщение отправлено!</div>
+        </form>
     </main>
-    <footer>
-        <p>© 2024 Профориентация в IT</p>
-    </footer>
 </body>
 </html>

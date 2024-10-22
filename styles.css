@@ -63,7 +63,7 @@ nav ul li a:hover {
     position: relative;
     overflow: hidden;
     width: 100%;
-    max-width: 800px; /* Максимальная ширина слайдера */
+    max-width: 100%; /* Убираем максимальную ширину слайдера */
     margin: 0 auto; /* Центрирование слайдера */
     border-radius: 10px; /* Скругление углов */
 }
@@ -87,11 +87,13 @@ nav ul li a:hover {
 .slide-text {
     position: absolute;
     bottom: 20px;
-    left: 20px;
+    left: 50%;
+    transform: translateX(-50%); /* Центрирование текста */
     color: #fff;
     background: rgba(0, 0, 0, 0.5);
     padding: 10px;
     font-size: 1.2rem;
+    text-align: center; /* Центрируем текст внутри блока */
 }
 
 .arrow {
@@ -155,7 +157,6 @@ footer p {
     }
 
     .slider {
-        width: 100%; /* Ширина слайдера на мобильных устройствах */
         margin: 20px 0; /* Добавляем отступ сверху и снизу */
     }
 
@@ -174,5 +175,11 @@ footer p {
 
     article {
         margin: 10px 0; /* Уменьшаем отступы между статьями */
+    }
+}
+
+@media (min-width: 769px) {
+    .slide-text {
+        font-size: 1.5rem; /* Увеличиваем размер текста на слайде для больших экранов */
     }
 }

@@ -9,7 +9,6 @@ h1, h2 {
     flex-wrap: wrap; /* Позволяет карточкам переходить на следующую строку */
     justify-content: center; /* Центрирует карточки по горизонтали */
     gap: 20px; /* Отступы между карточками */
-    background-size: cover;
     padding: 20px;
     border-radius: 8px;
 }

@@ -9,11 +9,11 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #F9FFFF; /* Небесная лазурь */
+    background-color: #FBE7C3; /* Кремовый цвет фона страницы */
 }
 
 header {
-    background: #2F6FB6; /* Темный зеленый чай */
+    background: #678A90; /* Светлый зеленовато-синий */
     color: #fff;
     padding: 20px 0;
 }
@@ -30,7 +30,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #AABFD0; /* Серовато-голубой */
+    color: #CEE5DD; /* Пастельный бирюзовый */
     text-decoration: none;
     font-weight: 700;
     transition: color 0.3s;
@@ -40,65 +40,103 @@ nav ul li a:hover {
     color: #DCB489; /* Золотой цвет при наведении */
 }
 
-h1 {
+.hero {
     text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content {
     margin: 20px 0;
 }
 
-.widget {
-    background: #6C8DAE; /* Сизый цвет */
-    padding: 30px;
-    border-radius: 10px;
-    max-width: 800px; /* Максимальная ширина виджета */
-    margin: 30px auto; /* Центрирование виджета */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px; /* Максимальная ширина слайдера */
+    margin: 0 auto; /* Центрирование слайдера */
+    border-radius: 10px; /* Скругление углов */
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.slide-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+#about-us, #latest-news {
+    margin: 40px 0;
+    padding: 20px;
+    background: #86A394; /* Темное зеленое море */
+    border-radius: 8px;
 }
 
 h2 {
-    font-size: 1.8rem;
-    color: #fff;
+    font-size: 2rem;
     margin-bottom: 20px;
 }
 
-.question {
+article {
     margin: 15px 0;
     padding: 15px;
-    background: #BCCF97; /* Светлый джинсовый цвет */
+    background: #fff;
+    border: 1px solid #ddd;
     border-radius: 5px;
-}
-
-.question p {
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-.submit-btn {
-    background: #A4DBB1; /* Нежный пастельный мятный */
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.1rem;
-    transition: background 0.3s;
-}
-
-.submit-btn:hover {
-    background: #935669; /* Темно-серая мальва (по желанию можно заменить на другой цвет) */
-}
-
-#result {
-    margin-top: 30px;
-    padding: 20px;
-    background: #D3C6B3; /* Цвет серый шелк */
-    border-radius: 10px;
-    color: #333;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background: #2F6FB6; /* Темный зеленый чай */
+    background: #678A90; /* Светлый зеленовато-синий */
     color: #fff;
 }
 
@@ -108,15 +146,33 @@ footer p {
 
 /* Адаптивные стили для мобильных устройств */
 @media (max-width: 768px) {
-    .widget {
-        padding: 20px; /* Уменьшаем отступы для мобильных устройств */
+    .hero h1 {
+        font-size: 2rem; /* Уменьшаем размер заголовка */
+    }
+
+    nav ul {
+        flex-direction: column; /* Меняем направление навигации на вертикальное */
+    }
+
+    .slider {
+        width: 100%; /* Ширина слайдера на мобильных устройствах */
+        margin: 20px 0; /* Добавляем отступ сверху и снизу */
+    }
+
+    .slide-text {
+        font-size: 1rem; /* Уменьшаем размер текста на слайде */
+    }
+
+    #about-us, #latest-news {
+        padding: 15px; /* Уменьшаем отступы для мобильных устройств */
+        margin: 20px 0; /* Добавляем отступ снизу */
     }
 
     h2 {
-        font-size: 1.5rem; /* Уменьшаем размер заголовка */
+        font-size: 1.5rem; /* Уменьшаем размер заголовка секций */
     }
 
-    .submit-btn {
-        width: 100%; /* Кнопка занимает всю ширину */
+    article {
+        margin: 10px 0; /* Уменьшаем отступы между статьями */
     }
 }

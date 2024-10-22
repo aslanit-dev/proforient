@@ -1,73 +1,71 @@
 /* Общие стили для всего сайта */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #B0C4DE; /* Цвет фона страницы */
-    color: #333; /* Цвет текста */
-    font-family: 'Roboto', sans-serif; /* Основной шрифт */
-    margin: 0; /* Убираем отступы по умолчанию */
-    padding: 0; /* Убираем отступы по умолчанию */
-    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
+    color: #333;
 }
 
-h1, h2, h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    color: #1a1a1a;
-}
-
-a {
-    color: #ccc;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Стили для заголовка и навигации */
 header {
-    background-color: #ccc; /* Цвет фона шапки */
-    padding: 10px 0; /* Отступы сверху и снизу */
-}
-
-nav {
-    display: flex; /* Flexbox для навигации */
-    justify-content: center; /* Центрируем ссылки */
-    background-color: #84c3be; /* Фон навигации */
-    padding: 20px 0; /* Отступы сверху и снизу */
+    background: #282c34;
+    color: #fff;
+    padding: 20px 0;
 }
 
 nav ul {
-    list-style-type: none; /* Убираем маркеры списка */
-    padding: 0;
+    list-style: none;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav ul li {
     margin: 0 15px;
 }
 
-nav a {
-    color: white;
-    font-size: 25px;
-    font-weight: bold;
+nav ul li a {
+    color: #61dafb;
+    text-decoration: none;
+    font-weight: 700;
     transition: color 0.3s;
 }
 
-nav a:hover {
-    color: #FFD700;
+nav ul li a:hover {
+    color: #21a1f1;
 }
 
-/* Слайдер */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content {
+    margin: 40px 0;
+}
+
 .slider {
-    flex: 1;
     position: relative;
-    min-width: 300px; /* Минимальная ширина для мобильных устройств */
+    overflow: hidden;
 }
 
 .slider-track {
     display: flex;
-    transition: transform 0.5s ease;
+    transition: transform 0.3s ease;
 }
 
 .slide {
@@ -75,83 +73,67 @@ nav a:hover {
     position: relative;
 }
 
+.slide img {
+    width: 100%;
+    display: block;
+}
+
 .slide-text {
     position: absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 50px;
-    color: #FFFFFF;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-align: center;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    font-size: 1.2rem;
 }
 
 .arrow {
-    background: transparent;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.8);
     border: none;
-    font-size: 2rem;
+    padding: 10px;
     cursor: pointer;
+    font-size: 1.5rem;
 }
 
-/* Контент */
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 20px;
+#prev {
+    left: 10px;
 }
 
-.content {
-    display: flex;
-    flex: 1;
-    flex-wrap: wrap;
+#next {
+    right: 10px;
 }
 
-/* Секции "О нас" и "Последние новости" */
 #about-us, #latest-news {
-    margin-top: 20px;
+    margin: 40px 0;
     padding: 20px;
-    background-color: #444;
-    color: white;
+    background: #f4f4f4;
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+article {
+    margin: 15px 0;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ddd;
     border-radius: 5px;
 }
 
-/* Подвал */
 footer {
     text-align: center;
-    padding: 10px 0;
+    padding: 20px;
+    background: #282c34;
+    color: #fff;
 }
 
-/* Адаптивные стили для мобильных устройств */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    .container {
-        flex-direction: column;
-    }
-
-    .content {
-        flex-direction: column;
-    }
-
-    .slider {
-        min-width: 100%;
-    }
-
-    .slide-text {
-        font-size: 30px;
-    }
+footer p {
+    margin: 0;
 }

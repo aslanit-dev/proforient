@@ -9,11 +9,11 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #FBE7C3; /* Кремовый цвет фона страницы */
+    background-color: #D3C6B3; /* Кремовый цвет фона страницы */
 }
 
 header {
-    background: #678A90; /* Светлый зеленовато-синий */
+    background: #935669; /* Светлый зеленовато-синий */
     color: #fff;
     padding: 20px 0;
 }
@@ -136,7 +136,7 @@ article {
 footer {
     text-align: center;
     padding: 20px;
-    background: #678A90; /* Светлый зеленовато-синий */
+    background: #935669; /* Светлый зеленовато-синий */
     color: #fff;
 }
 
